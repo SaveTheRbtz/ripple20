@@ -40,7 +40,7 @@ var defaultMSS = []byte("\x00\x45")
 var flagIgnoreMSS = flag.Bool("ignore-mss", false, "ignore mss (useful for MSS-overriding NATs)")
 var flagSrcPort = flag.Int("port", 0, "source port (default: random)")
 var flagDelay = flag.Duration("delay", 8*time.Millisecond, "delay between probes")
-var portsToScan = []layers.TCPPort{443, 80, 21, 23, 22, 25, 123, 465, 587, 161, 53, 554, 9100, 7627, 1935, 5060}
+var portsToScan = []layers.TCPPort{443, 80, 21, 23, 22, 25, 123, 465, 587, 161, 53, 554, 9100, 7627, 5060}
 
 // scanner handles scanning a single IP address.
 type scanner struct {
